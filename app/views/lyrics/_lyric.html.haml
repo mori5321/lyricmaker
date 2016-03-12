@@ -1,0 +1,6 @@
+- hidden_index = lyric_counter += 1
+= form_for lyric do |f|
+  %li.ui-state-default
+    = f.text_field :word, placeholder: lyric
+    = button_tag 'remove', class: 'remove-button'
+/ renderが隠れindexをもってる

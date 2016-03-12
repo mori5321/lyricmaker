@@ -1,0 +1,6 @@
+.lyric-table
+  %ul#sortable1.connectedSortable
+    - lyrics_couter = 0
+    = render partial: 'lyric', collection: @lyrics1
+  %ul#sortable2.connectedSortable
+    = render partial: 'lyric', collection: @lyrics2

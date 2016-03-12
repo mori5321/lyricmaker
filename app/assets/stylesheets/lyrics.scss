@@ -1,0 +1,60 @@
+// Place all the styles relatled to the lyrics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.reload-button{
+  margin-bottom: 10px;
+}
+
+.reload-button button{
+  position: relative;
+  left: 850px;
+  border: none;
+  background:#C3CFF6;
+  font-size: 20px;
+  width: 50px;
+  height: 30px;
+}
+
+.reload-button a{
+  color: black;
+  text-decoration: none;
+}
+
+.lyric-table{
+  width: 940px;
+}
+
+.clearfix:after{
+  content: '';
+  display: none;
+  clear: both;
+}
+
+ul{
+  list-style: none;
+}
+
+#sortable1, #sortable2 {
+  // border: 1px solid #eee;
+  width: 450px;
+  min-height: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 0;
+  float: left;
+  margin-right: 20px;
+}
+#sortable1 input, #sortable2 input {
+  margin: 0 5px 5px 50px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 300px;
+}
+
+li.ui-state-default{
+  border-radius: 5%;
+}
+
+#sortable1 li.ui-state-default {
+  background: skyblue;
+}
