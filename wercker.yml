@@ -4,7 +4,7 @@ build:
     steps:
       - bundle-install
       - rails-database-yml:
-          service: mysql2
+          service: mysql
       - script:
           name: echo ruby information
           code: |
