@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: lyricmaker_production
-  username: lyricmaker
+  username: root
   password: <%= ENV['LYRICMAKER_DATABASE_PASSWORD'] %>
