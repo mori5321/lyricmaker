@@ -52,3 +52,4 @@ production:
   database: lyricmaker_production
   username: root
   password: <%= ENV['LYRICMAKER_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
