@@ -1,3 +1,5 @@
+server '13.112.121.38', user: 'ec2-user', roles: %w{app db web}
+set :ssh_options, keys: '~/.ssh/id_rsa'
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -19,6 +21,7 @@
 
 # role :app, %w{deploy@example.com}, my_property: :my_value
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
+
 # role :db,  %w{deploy@example.com}
 
 
