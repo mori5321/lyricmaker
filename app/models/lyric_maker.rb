@@ -11,7 +11,8 @@ class LyricMaker < Mechanize
     links = []
     agent = Mechanize.new
     current_page = agent.get(url)
-    elements = current_page.search('#lyricList .body .title a')
+    elements = current_page.search('.bdy .ttl a')
+    p elements
     elements.each do |ele|
       links << ele[:href]
     end
@@ -58,7 +59,7 @@ class LyricMaker < Mechanize
   def self.get_lyric(link)
     agent = Mechanize.new
     page = agent.get(link)
-    lyrics = page.at('#lyricBody').inner_text
+    lyrics = page.at('#Lyric').inner_text
     #separate_english_word(lyrics)
     just_deviding_word(lyrics)
   end
